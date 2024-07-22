@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Color</title>
+    <link rel="stylesheet" href="SelectYourColor.css">
+</head>
+<body>
+    <!-- Header image for the page -->
+    <img src="images/Header05.png" alt="Select Your Color" class="header-image">
+
+    <!-- Container for color picker and button -->
+    <div class="controls">
+        <div class="color-picker-container">
+            <input type="color" id="color-picker" class="color-picker">
+        </div>
+        <span class="text-select">Select</span>
+        <span class="text-or">or</span>
+        <!-- Button to generate random color -->
+        <div class="button-container">
+            <button id="click-btn">
+                <p>Click Me!</p>
+            </button>
+        </div>
+    </div>
+
+    <!-- Display selected color with its hex code -->
+    <div id="color-display" class="color-display">
+        <span id="bg-hex-code"></span>
+    </div>
+
+    <!-- Button to save favorite colors (star button) -->
+    <button id="favorite-btn" class="favorite-btn">&#9733;</button>
+
+    <!-- Favorites list container -->
+    <div class="favorites-container">
+        <img src="images/Favorite.png" alt="Favorites" class="favorites-header">
+        <div id="favorites-list" class="favorites-list"></div>
+    </div>
+
+    <!-- Welcome message container -->
+    <div class="welcome-container">
+        <img src="images/Welcome.png" alt="Welcome" class="welcome-header">
+        <div class="welcome-message">
+            <p>This application is perfect for helping you choose colors for your projects. You can generate random colors, select a specific color using the color picker, and save your favorite colors for future reference. Click on a favorite color to view it again, or remove it from the list if you no longer need it. Also you can drag and drop your favorites to rearrange their order.</p>
+            <p>Each color displays its hex code, and within the selector you can view the RGB and HSL values as well for later reference. Additionally, you can use the color picker to sample colors from other images. Have fun exploring and finding the perfect colors for your needs!</p>
+        </div>
+    </div>
+
+    <script src="SelectYourColor.js"></script>
+</body>
+</html>
