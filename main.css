@@ -1,0 +1,306 @@
+/* Styles Sheet for SelectYourColor */
+
+/* General styling */
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for the text 'Select' */
+.text-select {
+    color: white;
+    font-size: 54px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 420px;
+    left: 990px;
+    margin: 10px 0;
+}
+
+/* Styling for the text 'or' */
+.text-or {
+    color: white;
+    font-size: 64px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 460px;
+    left: 920px;
+    margin: 10px 0;
+}
+
+/* Display container for the selected color */
+.color-display {
+    margin-top: -300px;
+    margin-left: 780px;
+    padding: 10px;
+    border: 2px solid white;
+    width: 580px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 54px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Welcome container styling */
+.welcome-container {
+    position: absolute;
+    left: 790px;
+    top: 1190px;
+    width: 540px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the welcome header image */
+.welcome-header {
+    width: 180%;
+    margin-bottom: -140px;
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+    margin-top: -80px;
+    width: 110%;
+    height: 1200px;
+    color: white;
+    font-size: 37px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+
+/* Small screens (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .welcome-container {
+        position: absolute;
+        left: 830px;
+        top: 1000px;
+        width: 540px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome-header {
+        width: 140%;
+    }
+    
+    .welcome-message {
+        margin-top: -60px;
+        width: 110%;
+        height: 1200px;
+        color: white;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .color-display {
+        margin-top: -140px;
+        margin-left: 780px;
+        padding: 10px;
+        border: 2px solid white;
+        width: 640px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 54px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .text-select {
+        color: white;
+        font-size: 54px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 90px;
+        left: 780px;
+        margin: 10px 0;
+    }
+    
+    .text-or {
+        color: white;
+        font-size: 64px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 120px;
+        left: 710px;
+        margin: 10px 0;
+    }
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+
+/* Medium screens (small laptops, 1024px and up) */
+@media (min-width: 1024px) {
+    .welcome-container {
+        position: absolute;
+        left: -170px;
+        top: 30px;
+        width: 540px;
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome-header {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+    
+    .welcome-message {
+        width: 20%;
+        color: white;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .color-display {
+        margin-top: 110px;
+        margin-left: 200px;
+        padding: 10px;
+        border: 2px solid white;
+        width: 520px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .text-select {
+        color: white;
+        font-size: 32px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 125px;
+        left: 160px;
+    }
+
+    .text-or {
+        color: white;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 145px;
+        left: 110px;
+    }
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    body {
+        background-color: black;
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 70px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    /* Styling for the text 'Select' */
+    .text-select {
+        color: white;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 30px;
+        left: 240px;
+        margin: 10px 0;
+    }
+    
+    /* Styling for the text 'or' */
+    .text-or {
+        color: white;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 30px;
+        left: 230px;
+        margin: 10px 0;
+    }
+    
+    /* Display container for the selected color */
+    .color-display {
+        margin-top: -160px;
+        margin-left: 500px;
+        padding: 10px;
+        border: 2px solid white;
+        width: 900px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+    
+    /* Welcome container styling */
+    .welcome-container {
+        position: absolute;
+        left: 70px;
+        top: 85px;
+        width: 200px;
+        height: 400px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Styling for the welcome header image */
+    .welcome-header {
+        width: 200%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    /* Styling for the welcome message */
+    .welcome-message {
+        margin-top: -80px;
+        width: 100%;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }    
+}

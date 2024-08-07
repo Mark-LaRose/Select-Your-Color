@@ -1,0 +1,407 @@
+/* Styles Sheet for SelectYourColor */
+
+/* Styling for the active state of the favorite button */
+.favorite-btn.active {
+    color: yellow;
+}
+
+/* Favorites container styling */
+.favorites-container {
+    position: absolute;
+    right: -280px;
+    top: 1020px;
+    width: 520px;
+    height: 1540px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 4px black, 0 0 0 6px white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the favorites header image */
+.favorites-header {
+    width: 70%;
+    height: auto;
+}
+
+/* Favorites list styling */
+.favorites-list {
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.favorites-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.favorites-list::-webkit-scrollbar-track {
+    background: #444;
+    border-radius: 6px;
+}
+
+.favorites-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #444;
+}
+
+.favorites-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Styling for each favorite item */
+.favorite-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 25px;
+    border: 1px solid white;
+    width: 90%;
+    background-color: #333;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Styling for the favorite button (star button) */
+.favorite-btn {
+    position: absolute;
+    top: 1010px;
+    left: 1295px;
+    background: none;
+    border: none;
+    font-size: 102px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    text-shadow: none;
+    box-shadow: none;
+    width: 24px;
+    height: 24px;
+}
+
+/* Color block styling for each favorite item */
+.color-block {
+    width: 120px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+/* Styling for the hex code span in each favorite item */
+.favorite-item span {
+    flex-grow: 1;
+    width: 60px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Styling for the delete button in each favorite item */
+.favorite-item .delete-btn {
+    background: none;
+    border: 5px solid black;
+    color: black;
+    cursor: pointer;
+    font-size: 44px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* Add styles for the dragging element and drop target */
+.favorite-item.dragging {
+    opacity: 0.5;
+}
+
+.favorite-item.dragover {
+    border: 2px dashed #ccc;
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+/* Small screens (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .favorites-container {
+        position: absolute;
+        right: 100px;
+        top: 740px;
+        width: 540px;
+        height: 1200px;
+        border: 2px solid white;
+        box-shadow: 0 0 0 4px black, 0 0 0 6px white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite-item {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 14px;
+        border: 1px solid white;
+        width: 90%;
+        background-color: #333;
+        color: white;
+        font-size: 48px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .favorite-btn {
+        position: absolute;
+        top: 870px;
+        left: 1355px;
+        background: none;
+        border: none;
+        font-size: 102px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        text-shadow: none;
+        box-shadow: none;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+/* Medium screens (small laptops, 1024px and up) */
+@media (min-width: 1024px) {
+    .favorites-container {
+        position: absolute;
+        left: 800px;
+        top: 95px;
+        width: 180px;
+        height: 600px;
+        border: 2px solid white;
+        box-shadow: 0 0 0 4px black, 0 0 0 6px white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite-item {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 7px;
+        border: 1px solid white;
+        width: 85%;
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .favorite-btn {
+        position: absolute;
+        top: 588px;
+        left: 715px;
+        background: none;
+        border: none;
+        font-size: 38px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        text-shadow: none;
+        box-shadow: none;
+        width: 20px;
+        height: 20px;
+    }
+
+    .color-block {
+        width: 25px;
+        height: 22px;
+        margin-right: 15px;
+    }
+
+    .favorite-item span {
+        flex-grow: 1;
+        width: 40px;
+        margin-right: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .favorite-item .delete-btn {
+        background: none;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+        font-size: 22px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/*  -------------------------------------------------------------------------  */
+
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    /* Styling for the active state of the favorite button */
+    .favorite-btn.active {
+        color: yellow;
+    }
+    
+    /* Favorites container styling */
+    .favorites-container {
+        position: absolute;
+        left: 1600px;
+        top: 165px;
+        width: 240px;
+        height: 600px;
+        border: 2px solid white;
+        box-shadow: 0 0 0 4px black, 0 0 0 6px white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Styling for the favorites header image */
+    .favorites-header {
+        width: 60%;
+        height: auto;
+    }
+    
+    /* Favorites list styling */
+    .favorites-list {
+        margin-top: 10px;
+        width: 100%;
+        height: calc(100% - 40px);
+        overflow-y: auto;
+    }
+    
+    /* Scrollbar styling */
+    .favorites-list::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    .favorites-list::-webkit-scrollbar-track {
+        background: #444;
+        border-radius: 6px;
+    }
+    
+    .favorites-list::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 6px;
+        border: 3px solid #444;
+    }
+    
+    .favorites-list::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+    
+    /* Styling for each favorite item */
+    .favorite-item {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 5px;
+        border: 1px solid white;
+        width: 90%;
+        background-color: #333;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    .favorite-btn {
+        position: absolute;
+        top: 680px;
+        left: 1390px;
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        text-shadow: none;
+        box-shadow: none;
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* Color block styling for each favorite item */
+    .color-block {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    /* Styling for the hex code span in each favorite item */
+    .favorite-item span {
+        flex-grow: 1;
+        width: 60px;
+        margin-right: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    /* Styling for the delete button in each favorite item */
+    .favorite-item .delete-btn {
+        background: none;
+        border: 2px solid black;
+        color: black;
+        cursor: pointer;
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    /* Add styles for the dragging element and drop target */
+    .favorite-item.dragging {
+        opacity: 0.5;
+    }
+    
+    .favorite-item.dragover {
+        border: 2px dashed #ccc;
+    }    
+}
