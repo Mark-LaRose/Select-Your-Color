@@ -177,6 +177,7 @@ button p {
         height: auto;
         position: relative;
         top: -120px;
+        margin-left: -20px;
     }
     
     /* Controls container styling */
